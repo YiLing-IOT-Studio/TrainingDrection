@@ -73,7 +73,7 @@ a{
 /*header*/
 header{
     height: 900px;
-    background: url("../img/pintu4.jpg") no-repeat;
+    background: url("../img/3-01.png") no-repeat 0 -100px;
     background-size: cover;
 }
 header .logo{
