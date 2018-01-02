@@ -73,39 +73,46 @@ a{
 /*header*/
 header{
     height: 900px;
-    background: url("../img/3-01.png") no-repeat 0 -100px;
-    background-size: cover;
+    /*background: url("../img/3-01.png") no-repeat 0 -100px;*/
+    /*background-size: cover;*/
+    overflow: hidden;
+    margin:0;
+    padding: 0;
+    width: 100%;
+}
+header .bg{
+    width: 100%;
+    position: relative;
+    top: -100px;
 }
 header .logo{
     display: block;
     text-align: center;
     font-family: Lucida Sans Unicode,Verdana;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 5;
 }
 header h1{
     font-size: 1.5em;
 }
 header div img{
-    margin-top: 12em;
     margin-bottom: 10px;
     width: 78px;
     height:78px;
-    -webkit-animation: mytransition linear 1s 0s;
-    animation: mytransition 1s linear 0s;
-}
-@-webkit-keyframes mytransition{
-    0% {width: 10px;height: 10px;border: 0;}
-    100% {width: 78px;height: 78px;}
-}
-@keyframes mytransition {
-    0% {width: 10px;height: 10px;border: 0;}
-    100% {width: 78px;height: 78px;}
 }
 /*main*/
 .main .row{
     /*height: 500px;*/
     /*width: 90%;*/
-    margin-top: 3em;
-    padding: 10em 2em 2em 2em;
+    margin-top: 3rem;
+    padding: 10rem 2rem 2rem 2rem;
     position: relative;
     text-align: center;
 }
@@ -122,8 +129,8 @@ header div img{
 }
 .left .cont{
     font-size: 1em;
-    padding: 2em;
-    padding-right: 4em;
+    padding: 1rem;
+    /*padding-right: 4em;*/
     display: block;
     width: 90%;
     height: 200px;
@@ -150,8 +157,8 @@ header div img{
 }
 .right .cont{
     font-size: 1em;
-    padding: 2em;
-    padding-left: 4em;
+    padding: 1rem;
+    /*padding-left: 3.4rem;*/
     display: block;
     width: 90%;
     height: 200px;
@@ -161,10 +168,33 @@ header div img{
     top:-3.5em;
     background: rgba(253, 242, 255, 0.5);
 }
+.ajust{
+    padding:0 3rem;
+}
 .bottom{
     margin-bottom: 300px;
 }
 .cont a{
     font-size: 1.5em;
     display: inline;
+}
+/*mask*/
+.mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index:9;
+}
+.span{
+    text-align: center;
+    font-size: 24px;
+    position: absolute;
+    left:0;
+    right: 0;
+    top:150px;
+    font-family: "Lucida Console",'微软雅黑';
+    z-index: 10;
 }
